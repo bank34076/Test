@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>หน้าเเรก</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/Style.css">
+		<link rel="stylesheet" href="cycle-plugin/style.css">
+    </head>
+<body>
+	<!------------------------------ Wrap all page content here ----------------------------------------->
+	<div id="wrap">
+  	<!------------------------------------ Fixed navbar ------------------------------------------>
+  	<div class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+      		<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          			<span class="icon-bar"></span>
+          			<span class="icon-bar"></span>
+          			<span class="icon-bar"></span>
+        		</button>
+        		<a class="navbar-brand" href="home.html">Notebook Service center</a>
+      		</div>
+      		<div class="collapse navbar-collapse">
+        		<ul class="nav navbar-nav navbar-right">
+          			<li class="active"><a href="home.html">Home</a></li>
+          			<li><a href="promotion.html">Promotion</a></li>
+          			<li><a href="checkrepair.html">Checkrepair</a></li>
+          			<li><a href="Contact.html">Contact</a></li> 
+        		</ul>
+      		</div><!--/.nav-collapse -->
+    	</div>
+	</div>
+	<!-----------------------------------------------------------------------------------------------------> 
+  	<!-----------------------------------------  page content ---------------------------------------->
+  	<div class="container">
+    	<div class="page-header">
+      		<h1><a href="">Newest Sites</a></h1>
+    	</div>
+    	<div class="container" align="center">
+    		<div id="slide-img" align="center">
+            	<img src="img/1.jpg" class="img-responsive" alt="Responsive image"/>
+            	<img src="img/2.jpg" class="img-responsive" alt="Responsive image"/> 
+			</div>
+		</div>
+  	</div>
+	<!----------------------------------------------------------------------------------->
+	<div id="footer">
+  		<div class="container">
+      		<p class="text-center">
+          		<a href="home.html">หน้าเเรก</a>
+          		<a href="promotion.html">โปรโมชั่น</a>
+          		<a href="checkrepair.html">ตรวจสอบงานซ่อม</a>
+          		<a href="Contact.html">ติดต่อเรา</a>
+          		<div class="text-center">
+          			<a href="#"><img src="img/icon/facebook-xxl.png" width="30" height="30"></a>
+          			<a href="#"><img src="img/icon/twitter-256.png" width="30" height="30"></a>
+          			<a href="#"><img src="img/icon/google-plus-xxl.png" width="30" height="30"></a> 
+          		</div>
+          		<p class="text-muted text-center">Copyright © 2014 All Rights Reserved Nirut And kriangkrai</p>
+      		</p>
+		</div>
+	</div>
+</div>
+</div>
+	<!------------------------------------------ JavaScript ------------------------------------------------------->
+    <script src="js/jquery1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="cycle-plugin/jquery-1.7.2.min.js"></script>
+    <script src="cycle-plugin/jquery.cycle.all.js"></script>        
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#slide-img').after('<div id="nav" class="nav">').cycle({
+				fx:'fade',
+				speed:300,
+				timeout:5000,
+				pager:'#nav'
+			});
+		});
+	</script>
+    <!------------------------------------------------------------------------------------------------------------>
+    </body>
+</html>
